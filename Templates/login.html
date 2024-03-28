@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#cf70db;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        
+        form {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #e8ebe9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color:#e8f7f4;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="radio"] {
+            width: calc(100% - 110px);
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccccccce;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #00ccff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+        }
+
+button:hover {
+    background-color: #b30054e5;
+}
+
+    </style>
+</head>
+<body>
+    <h1><u>LOGIN FORM </u></h1>
+    <form method="POST">
+         <label for="">UserName:</label>
+        <input type="text" name="username">
+        <label for="">Email:</label>
+        <input type="text" name="email">
+        <label for="">Password:</label>
+        <input type="password" name="password">
+        <br>
+      <button>submit</button>
+      <button>reset</button>
+    </form>
+</body>
+</html>
